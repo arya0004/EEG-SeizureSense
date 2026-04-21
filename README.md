@@ -148,29 +148,3 @@ results/
 * Web deployment using Flask or FastAPI
 * Explainable AI for medical interpretation
 * Integration with wearable EEG devices
-
----
-
-## 👨‍💻 Author
-
-Arya Manve
-
----
-
-## ⭐ Acknowledgment
-
-Dataset provided by Bonn University EEG database.
-
----
-
-## 🧠 Interview Explanation (Short)
-
-“I developed a hybrid CNN-LSTM model for EEG signal classification that captures both spatial and temporal patterns, and compared it with traditional ML and deep learning approaches.”
-
----
-
-If you want, I can next:
-
-* Make this **resume bullet (very strong)**
-* Add **GitHub screenshots section**
-* Or write **IEEE paper from this directly**
