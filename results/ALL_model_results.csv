@@ -1,0 +1,7 @@
+Model,Accuracy (%),Precision (%),Recall (%),F1-Score (%)
+Random_Forest,85.0,84.83,85.0,84.87
+SVM,76.0,79.66,76.0,73.09
+Decision_Tree,81.0,81.73,81.0,80.49
+1D_CNN,95.53,95.62,95.53,95.52
+BiLSTM,79.87,80.11,79.87,79.76
+CNN_LSTM_Hybrid,93.13,93.32,93.13,93.12
