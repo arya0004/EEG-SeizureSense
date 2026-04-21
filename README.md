@@ -46,8 +46,10 @@ git clone https://github.com/your-username/eeg-seizuresense.git
 cd eeg-seizuresense
 
 pip install numpy pandas matplotlib seaborn scipy pywavelets scikit-learn tensorflow
+
 ▶️ Run the Project
 python eeg_deep_learning_classification.py
+
 📊 Output
 results/
 │── figures/
@@ -59,6 +61,7 @@ results/
 │   ├── best_model.h5
 │
 │── ALL_model_results.csv
+
 🧠 Models Implemented
 🔹 1D CNN
 Extracts spatial EEG patterns
@@ -88,29 +91,3 @@ Best model selected based on accuracy
 ⚡ Real-time seizure detection
 🧠 Brain-computer interfaces
 📊 Neuroscience research
-
-🔮 Future Scope
-Real-time EEG streaming
-Web deployment (Flask / FastAPI)
-Explainable AI (XAI)
-Integration with wearable devices
-👨‍💻 Author
-
-Arya Manve
-📌 AI + Systems + Healthcare
-
-⭐ If you like this project
-
-Give it a ⭐ on GitHub — it helps!
-
-🧠 Viva / Interview One-Liner
-
-“I built a hybrid CNN-LSTM model for EEG classification that captures both spatial and temporal patterns, outperforming traditional ML and standalone deep learning models.”
-
-🚀 Optional Banner (Top Image)
-
-Add this at top if you want a visual banner:
-
-<p align="center">
-  <img src="https://images.unsplash.com/photo-1581091870622-3f3c1b5b4b9b" width="100%" />
-</p>
