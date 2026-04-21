@@ -1,93 +1,55 @@
-# EEG-SeizureSense
-EEG SeizureSense: Deep Learning-Based Epileptic Seizure Classification
 🧠 EEG SeizureSense
-⚡ Deep Learning-Based Epileptic Seizure Classification System
-<p align="center"> <img src="https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python" /> <img src="https://img.shields.io/badge/TensorFlow-Deep%20Learning-orange?style=for-the-badge&logo=tensorflow" /> <img src="https://img.shields.io/badge/Scikit--Learn-ML-yellow?style=for-the-badge&logo=scikit-learn" /> <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge" /> <img src="https://img.shields.io/badge/Domain-Healthcare%20AI-red?style=for-the-badge" /> </p>
-📌 Overview
+Deep Learning-Based Epileptic Seizure Classification
+📌 Project Overview
+EEG SeizureSense is a high-performance analytical pipeline designed to detect and classify epileptic seizures from EEG (Electroencephalogram) signals. By fusing traditional signal processing with modern neural architectures, the system achieves state-of-the-art accuracy in identifying neurological anomalies.
 
-EEG SeizureSense is a deep learning-based system for detecting epileptic seizures from EEG signals. It combines signal processing, machine learning, and deep learning architectures to deliver high-performance classification.
+The core of this project is a benchmarking suite that compares classic Machine Learning with advanced Deep Learning models, featuring a novel Hybrid CNN-LSTM architecture.
 
-The project compares:
+🚀 Key Innovations
+Hybrid Modeling: Combines spatial feature extraction (CNN) with temporal sequence learning (LSTM).
 
-✅ Traditional ML models
-✅ Deep learning models
-✅ Hybrid architectures (CNN + LSTM)
+Dual-Domain Features: Utilizes both Power Spectral Density (PSD) and Wavelet Transforms.
 
-📂 Main code:
+Automated Benchmarking: One-click execution compares RF, SVM, CNN, and BiLSTM models.
 
-🧠 Key Highlights
+End-to-End Pipeline: Handles everything from raw signal segmentation to visual analytics.
 
-✨ Hybrid CNN-LSTM (Novel Contribution)
-📊 Automatic performance comparison
-⚙️ End-to-end pipeline (Data → Training → Evaluation)
-📉 Visual analytics (graphs, confusion matrices)
-🧪 ML vs DL benchmarking
+🏗️ System Architecture
+The pipeline follows a modular approach to ensure data integrity and model reproducibility:
 
-🏗️ Architecture
-📂 Dataset
+Data Acquisition (Bonn Dataset) → Preprocessing (Normalization & Segmentation) → Feature Engineering (Wavelets/PSD) → Model Training (Hybrid/ML) → Evaluation (Metrics/Visuals)
 
-📌 Bonn University EEG Dataset
+📂 Dataset Information
+The project utilizes the Bonn University EEG Dataset, structured as follows:
 
-Classes:
-Healthy (Eyes Open)
-Healthy (Eyes Closed)
-Seizure-Free
-Epileptogenic Zone
-Seizure
-📁 Folder Structure:
-bonn_dataset/
-│── A/
-│── B/
-│── C/
-│── D/
-│── E/
-⚙️ Installation
-git clone https://github.com/your-username/eeg-seizuresense.git
-cd eeg-seizuresense
-
-pip install numpy pandas matplotlib seaborn scipy pywavelets scikit-learn tensorflow
-
-▶️ Run the Project
-python eeg_deep_learning_classification.py
-
-📊 Output
-results/
-│── figures/
-│   ├── training_history.png
-│   ├── confusion_matrix.png
-│   └── comparison_chart.png
-│
-│── models/
-│   ├── best_model.h5
-│
-│── ALL_model_results.csv
+Structure:
+bonn_dataset/ → [A, B, C, D, E] folders containing .txt signal files.
 
 🧠 Models Implemented
-🔹 1D CNN
-Extracts spatial EEG patterns
-Multi-scale convolution
-🔹 BiLSTM
-Captures temporal dependencies
-Works well for sequential data
-🔥 CNN-LSTM Hybrid (Core Contribution)
-CNN → Feature extraction
-LSTM → Temporal modeling
-🚀 Best performing model
-📈 Evaluation Metrics
+1. Hybrid CNN-LSTM (Top Performer)
+CNN Layers: Act as an automated feature extractor, identifying spatial patterns in the EEG waveforms.
 
-✔ Accuracy
-✔ Precision
-✔ Recall
-✔ F1 Score
-✔ Confusion Matrix
+LSTM Layers: Capture the "memory" or temporal dependencies of the signal over time.
 
-🧪 Results
-Automatic training of all models
-Comparison plotted in charts
-Best model selected based on accuracy
-💡 Applications
+2. Bidirectional LSTM (BiLSTM)
+Processes signals in both forward and backward directions to better understand the context of neural spikes.
 
-🏥 Clinical decision support
-⚡ Real-time seizure detection
-🧠 Brain-computer interfaces
-📊 Neuroscience research
+3. 1D-CNN
+Optimized for high-speed local pattern recognition within the time-series data.
+
+4. ML Baselines
+Random Forest, SVM, and Decision Trees are included to provide a performance baseline.
+
+⚙️ Installation & Usage
+1. Clone & Setup
+2. Install Requirements
+3. Execute Pipeline
+📊 Visualizing Results
+After execution, check the /results directory for an automated breakdown of performance:
+
+🔮 Future Roadmap
+[ ] Real-time Streaming: Integration with Brainflow API for live EEG headsets.
+
+[ ] Edge Deployment: Quantizing models for mobile/embedded healthcare devices.
+
+[ ] Explainable AI (XAI): Implementing Grad-CAM to visualize which parts of the EEG signal triggered a seizure alert.
